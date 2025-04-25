@@ -1,17 +1,19 @@
-import Menu from "./components/menu";
-import Contacto from "./components/contacto";
-import About from "./components/about";
-import Ours from "./components/ours";
-import Habitaciones from "./components/habitaciones";
-import Footer from "./components/footer";
-import Banner from "./components/banner";
-
-
-function App() {
-
-  return (
+import { Routes, Route} from "react-router-dom"
+import Home from "./pages/Home"
+import About from "./pages/About"
+import Rooms from "./pages/Rooms"
+import Contact from "./pages/Contact"
+import NotFound from "./pages/NotFound"
+export function App(){
+    return(
     <>
-      Gaviria
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/about" element={<About/>}/>
+        <Route path="/Rooms" element={<Rooms/>}/>
+        <Route path="/Contact" element={<Contact/>}/>
+        <Route path="*" element={<NotFound />}/>
+      </Routes>
     </>
   )
 }
