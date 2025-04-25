@@ -1,9 +1,15 @@
-import React from 'react'
+import Menu from "./menu"
+import Footer from "./footer"
+import Contact from "../pages/Contact"
+
 
 export default function About() {
   return (
-    <div>
-      Pagina About
-    </div>
+    <>
+      <Menu/>
+      <h1>Pagina About</h1>
+      <Contacto/>
+      <Footer/>
+    </>
   )
 }

@@ -1,9 +1,14 @@
-import React from 'react'
+import Menu from "../components/menu"
+import Contacto from "../components/contacto"
+import Footer from "../components/footer"
 
 export default function Rooms() {
   return (
-    <div>
-      Pagna Rooms
-    </div>
+    <>
+        <Menu/>
+        <h1>Pagina Rooms</h1>
+        <Contacto/>
+        <Footer/>
+    </>
   )
 }
